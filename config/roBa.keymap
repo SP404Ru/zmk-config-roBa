@@ -66,9 +66,9 @@
             compatible = "zmk,behavior-sensor-rotate-var";
             label = "NEW_BEHAVIOR";
             #sensor-binding-cells = <2>;
-            bindings = <&none>, <&none>;
+            bindings = <&msc>, <&msc>;
 
-            tap-ms = <3>;
+            tap-ms = <20>;
         };
     };
 
