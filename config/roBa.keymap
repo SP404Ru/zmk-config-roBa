@@ -61,15 +61,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
-
-        new_behavior: new_behavior {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            label = "NEW_BEHAVIOR";
-            #sensor-binding-cells = <2>;
-            bindings = <&msc>, <&msc>;
-
-            tap-ms = <20>;
-        };
     };
 
     keymap {
@@ -78,7 +69,7 @@
         default_layer {
             bindings = <
 &kp EQUAL                &kp Q         &kp L         &kp U                 &kp COMMA                                                                &kp F        &kp W  &kp R  &kp Y  &kp P
-&kp SLASH                &kp E         &kp I         &kp A                 &kp O        &mkp MB3                        &lt_to_layer_0 0 MINUS      &kp K        &kp T  &kp N  &kp S  &kp H
+&kp LEFT_GUI             &kp E         &kp I         &kp A                 &kp O        &mkp MB3                        &lt_to_layer_0 0 MINUS      &kp K        &kp T  &kp N  &kp S  &kp H
 &mt LEFT_SHIFT QUESTION  &kp Z         &kp X         &kp C                 &kp V        &kp PERIOD                      &lt_to_layer_0 1 SEMICOLON  &kp G        &kp D  &kp M  &kp J  &kp B
 &kp LCTRL                &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 4 TAB  &lt 2 SPACE  &lt_to_layer_0 3 LC(SPACE)      &kp BACKSPACE               &lt 1 ENTER                       &kp DEL
             >;
