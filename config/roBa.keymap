@@ -67,9 +67,9 @@
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
         
-                tap-ms = <50>;
-            };
+                tap-ms = <40>;
         };
+    };
     keymap {
         compatible = "zmk,keymap";
 
@@ -81,7 +81,7 @@
 &kp LCTRL                &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 4 TAB  &lt 2 SPACE  &lt_to_layer_0 3 LC(SPACE)      &kp BACKSPACE               &lt 1 ENTER                       &kp DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_DOWN PG_UP>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         FUNCTION {
