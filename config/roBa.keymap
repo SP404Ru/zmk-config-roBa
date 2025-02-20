@@ -77,12 +77,12 @@
         default_layer {
             bindings = <
 &kp EQUAL                &kp Q         &kp L         &kp U                 &kp COMMA                                                                &kp F        &kp W  &kp R  &kp Y  &kp P
-&kp LEFT_GUI             &kp E         &kp I         &kp A                 &kp O        &mkp MB3                        &lt_to_layer_0 0 MINUS      &kp K        &kp T  &kp N  &kp S  &kp H
+&kp LEFT_GUI             &kp E         &kp I         &kp A                 &kp O        &mkp MB3                        &lt_to_layer_0 2 MINUS      &kp K        &kp T  &kp N  &kp S  &kp H
 &mt LEFT_SHIFT QUESTION  &kp Z         &kp X         &kp C                 &kp V        &kp PERIOD                      &lt_to_layer_0 1 SEMICOLON  &kp G        &kp D  &kp M  &kp J  &kp B
-&msc SCRL_DOWN           &msc SCRL_UP  &kp LEFT_ALT  &lt_to_layer_0 4 TAB  &lt 2 SPACE  &lt_to_layer_0 3 LC(SPACE)      &kp BACKSPACE               &lt 1 ENTER                       &kp DEL
+&msc SCRL_DOWN           &msc SCRL_UP  &kp LEFT_ALT  &lt_to_layer_0 4 TAB  &lt 5 SPACE  &lt_to_layer_0 3 LC(SPACE)      &kp BACKSPACE               &lt 1 ENTER                       &kp DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         FUNCTION {
@@ -92,6 +92,8 @@
 &trans  &trans  &trans  &trans              &trans            &trans                   &trans   &trans  &trans  &trans  &trans  &kp F11
 &trans  &trans  &trans  &kp LC(LEFT_ARROW)  &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)      &trans   &trans                          &kp F12
             >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
 
         NUM {
@@ -101,6 +103,8 @@
 &mt LEFT_SHIFT MINUS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PERIOD    &kp EQUAL                    &kp PRINTSCREEN  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
 &trans                &trans           &trans           &trans           &trans        &trans                       &trans           &trans                                                                     &kp PIPE
             >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
 
         ARROW {
@@ -111,7 +115,7 @@
 &trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         MOUSE {
