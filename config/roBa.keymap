@@ -76,8 +76,8 @@
             bindings = <
 &kp LANG_ZENKAKUHANKAKU  &kp Q         &kp L         &kp U                 &kp COMMA                                                                &kp F        &kp W  &kp R  &kp Y  &kp P
 &kp LEFT_GUI             &kp E         &kp I         &kp A                 &kp O        &mkp MB3                        &lt_to_layer_0 2 MINUS      &kp K        &kp T  &kp N  &kp S  &kp H
-&mt LEFT_SHIFT QUESTION  &kp Z         &kp X         &kp C                 &kp V        &kp PERIOD                      &lt_to_layer_0 1 SEMICOLON  &kp G        &kp D  &kp M  &kp J  &kp B
-&kp LEFT_CONTROL         &msc SCRL_UP  &kp LEFT_ALT  &lt_to_layer_0 2 TAB  &lt 6 SPACE  &lt_to_layer_0 3 LC(SPACE)      &kp BACKSPACE               &lt 1 ENTER                       &kp DEL
+&mt LEFT_SHIFT QUESTION  &kp Z         &kp X         &kp C                 &kp V        &kp PERIOD                      &lt_to_layer_0 3 SEMICOLON  &kp G        &kp D  &kp M  &kp J  &kp B
+&kp LEFT_CONTROL         &msc SCRL_UP  &kp LEFT_ALT  &lt_to_layer_0 2 TAB  &lt 6 SPACE  &lt_to_layer_0 4 LC(SPACE)      &kp BACKSPACE               &lt 1 ENTER                       &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN C_AC_SCROLL_UP>;
@@ -101,23 +101,23 @@
             >;
         };
 
-        ARROW {
-            bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
-        };
-
         MOUSE {
             bindings = <
 &trans          &trans  &trans  &trans    &trans                                    &trans  &trans    &trans    &trans    &trans
 &msc SCRL_DOWN  &trans  &trans  &mkp MB1  &msc SCRL_UP     &trans           &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
 &msc SCRL_LEFT  &trans  &trans  &trans    &msc SCRL_RIGHT  &lt 0 SPACE      &trans  &trans  &trans    &trans    &trans    &trans
 &trans          &trans  &trans  &trans    &trans           &trans           &trans  &trans                                &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
+        };
+
+        ARROW {
+            bindings = <
+&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
+&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
