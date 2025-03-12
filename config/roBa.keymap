@@ -80,7 +80,7 @@
 &kp LEFT_CONTROL         &msc SCRL_UP  &kp LEFT_ALT  &lt_to_layer_0 2 INT_HENKAN  &lt 6 SPACE  &lt_to_layer_0 4 LC(INT_MUHENKAN)      &kp BACKSPACE               &lt 1 ENTER                       &kp DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN C_AC_SCROLL_UP>;
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         FUNCTION {
@@ -109,7 +109,7 @@
 &trans          &trans  &trans  &trans    &trans           &trans           &trans  &trans                                &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         ARROW {
