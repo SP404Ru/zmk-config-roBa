@@ -74,10 +74,10 @@
 
         default_layer {
             bindings = <
-&kp TAB                  &kp Q         &kp L         &kp U                        &kp COMMA                                                                       &kp F        &kp W  &kp R  &kp Y  &kp P
-&kp LEFT_GUI             &kp E         &kp I         &kp A                        &kp O        &mkp MB3                               &lt_to_layer_0 2 MINUS      &kp K        &kp T  &kp N  &kp S  &kp H
-&mt LEFT_SHIFT QUESTION  &kp Z         &kp X         &kp C                        &kp V        &kp PERIOD                             &lt_to_layer_0 3 SEMICOLON  &kp G        &kp D  &kp M  &kp J  &kp B
-&kp LEFT_CONTROL         &msc SCRL_UP  &kp LEFT_ALT  &lt_to_layer_0 2 INT_HENKAN  &lt 6 SPACE  &lt_to_layer_0 4 LC(INT_MUHENKAN)      &kp BACKSPACE               &lt 1 ENTER                       &kp DEL
+&kp TAB                  &kp Q         &kp L         &kp U                          &kp COMMA                                                                 &kp F        &kp W  &kp R  &kp Y  &kp P
+&kp LEFT_GUI             &kp E         &kp I         &kp A                          &kp O        &mkp MB3                         &lt_to_layer_0 2 MINUS      &kp K        &kp T  &kp N  &kp S  &kp H
+&mt LEFT_SHIFT QUESTION  &kp Z         &kp X         &kp C                          &kp V        &kp PERIOD                       &lt_to_layer_0 3 SEMICOLON  &kp G        &kp D  &kp M  &kp J  &kp B
+&kp LEFT_CONTROL         &msc SCRL_UP  &kp LEFT_ALT  &lt_to_layer_0 2 INT_MUHENKAN  &lt 6 SPACE  &lt_to_layer_0 4 INT_HENKAN      &kp BACKSPACE               &lt 1 ENTER                       &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
@@ -134,10 +134,10 @@
 
         CAD {
             bindings = <
-&kp ESCAPE      &kp N7        &kp N8        &kp N9        &trans                         &trans  &trans  &trans  &trans  &trans
-&kp DELETE      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp S      &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SPACE  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LC(Z)       &kp N0        &kp PERIOD    &trans        &trans     &trans      &trans  &trans                          &trans
+&kp ESCAPE        &kp N7     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9                      &trans  &trans  &trans  &trans  &trans
+&kp DELETE        &kp SPACE  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT    &kp S      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0      &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_CONTROL  &kp N0     &kp PERIOD    &trans        &trans        &trans      &trans  &trans                          &trans
             >;
         };
     };
